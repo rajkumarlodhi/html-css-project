@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS quotes Property</title>
+    <style>
+      body {
+        background-color: rgb(217, 226, 233);
+      }
+      p {
+        quotes: none;
+        font-size: 20px;
+      }
+      p:before {
+        content: open-quote;
+      }
+      p:after {
+        content: close-quote;
+      }
+
+      div {
+        font-size: 20px;
+      }
+
+      #j1 {
+        quotes: "?" "?";
+      }
+      #j2 {
+        quotes: "?" "?";
+      }
+      #j3 {
+        quotes: "?" "?";
+      }
+      #j4 {
+        quotes: "«" "»";
+      }
+      #j5 {
+        quotes: "?" "?";
+      }
+      #j6 {
+        quotes: "?" "?" "«" "»";
+      }
+      #j7 {
+        quotes: "\2018""\2019";
+      }
+      #j8 {
+        quotes: "\2039""\203A";
+      }
+      #j9 {
+        quotes: "\201C""\201E";
+      }
+      #j10 {
+        quotes: "\201D""\201E";
+      }
+      #j11 {
+        quotes: "\0022""\201E";
+      }
+      #j12 {
+        quotes: "\201C""\201D";
+      }
+      #j13 {
+        quotes: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Example of quotes: none;</h1>
+      <p>Welcome to the rktech.com</p>
+
+      <h1>Example of the quotes:string;</h1>
+      <div><q id="j1"> rktech.com </q></div>
+      <div><q id="j2"> rktech.com </q></div>
+      <div><q id="j3"> rktech.com </q></div>
+      <div><q id="j4"> rktech.com </q></div>
+      <div><q id="j5"> rktech.com </q></div>
+      <div><q id="j6"> rktech.com </q></div>
+      <div><q id="j7"> rktech.com </q></div>
+      <div><q id="j8"> rktech.com </q></div>
+      <div><q id="j9"> rktech.com </q></div>
+      <div><q id="j10"> rktech.com </q></div>
+      <div><q id="j11"> rktech.com </q></div>
+      <div><q id="j12"> rktech.com </q></div>
+      <div><q id="j13"> rktech.com </q></div>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>background-origin property</title>
+    <style>
+      div {
+        padding: 20px;
+        width: 350px;
+        height: 175px;
+        background-image: url("IMG_8888.JPG");
+        background-repeat: no-repeat;
+        border: 8px dashed blue;
+        color: red;
+        font-size: 25px;
+        text-align: center;
+      }
+      #border {
+        background-origin: border-box;
+      }
+      #padding {
+        background-origin: padding-box;
+      }
+      #content {
+        background-origin: content-box;
+      }
+      h2 {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>background-origin: border-box;</h2>
+    <div id="border">
+      <p>Welcome to the rktech.com</p>
+    </div>
+    <h2>background-origin: padding-box;</h2>
+    <div id="padding">
+      <p>Welcome to the rktech.com</p>
+    </div>
+    <h2>background-origin: content-box;</h2>
+    <div id="content">
+      <p>Welcome to the rktech.com</p>
+    </div>
+  </body>
+</html>

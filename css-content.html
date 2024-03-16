@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS content Property</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(225 42 15 / 40%);
+      }
+      p {
+        font-size: 25px;
+      }
+      p::before {
+        content: "Hello World. Welcome ";
+      }
+
+      #para::before {
+        content: url("IMG_8888.jpg");
+        object-fit: fill;
+      }
+      #para1::before {
+        content: url("IMG_8888.jpg");
+        object-fit: fill;
+      }
+      #d1::before {
+        content: "My Name: ";
+      }
+      img {
+        height: 50px;
+        width: 50px;
+      }
+      #d2::after {
+        content: "Lodhi";
+      }
+      #url::before {
+        content: open-quote;
+      }
+      #url::after {
+        content: close-quote; 
+      }
+      a::after{
+        content:attr(href);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS content property</h1>
+    <h2>Use of content: string; and content: url();</h2>
+    <p>to the rktech.com</p>
+    <p id="para">This is a paragraph using the <b>url()</b> value.</p>
+    <p id="para1">This is another paragraph using the <b>url()</b> value.</p>
+    <div id="d1">Rajkumar</div>
+    <div id="d2">Last Name :</div>
+    <div id="d3">Please visit <span id="url">www.rktech.com</span></div>
+    <a href= https://www.rktech.com>Click here!  
+    </a>
+  </body>
+</html>

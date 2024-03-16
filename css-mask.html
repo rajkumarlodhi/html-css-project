@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div img {
+        width: 200px;
+        height: 200px;
+      }
+      #masked {
+        width: 300px;
+        height: 300px;
+        -webkit-mask-box-image: url(brilliant-diamond-6.png) 25;
+      }
+      #masked2 {
+        width: 300px;
+        height: 300px;
+        border-radius: 0px;
+        -webkit-mask-image: radial-gradient(
+          circle at 50% 50%,
+          blue 40%,
+          rgba(0, 0, 0, 0.3) 70%
+        );
+        border: 9px ridge red;
+      }
+    </style>
+
+  <body>
+    <center>
+      <div id="one">
+        <h2>Original Images</h2>
+        <img src="/img0542.JPG" />
+        <img src="/brilliant-diamond-6.png" />
+      </div>
+      <h2>After masking example one</h2>
+      <img src="/img0542.JPG" id="masked" />
+      <h2>After masking example two</h2>
+      <img src="/img0542.JPG" id="masked2" />
+    </center>
+  </body>
+</html>

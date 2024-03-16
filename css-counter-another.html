@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        counter-reset: section;
+      }
+      h2 {
+        counter-reset: subsection;
+      }
+      h2::before {
+        counter-increment: section;
+        content: "CSS Section " counter(section) ": ";
+      }
+      h3::before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) ": ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example of CSS Counters:</h1>
+    <h2>Java Tutorial</h2>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>Oracle Tutorial</h2>
+    <h3>Oracle one</h3>
+    <h3>Oracle two</h3>
+    <h3>Oracle three</h3>
+    <h3>Oracle four</h3>
+    <h2>DB Tutorial</h2>
+    <h3>db one</h3>
+    <h3>db two</h3>
+    <h3>db three</h3>
+    <h3>db four</h3>
+    <p>
+      <strong>Note:</strong> IE8 supports these properties only if a !DOCTYPE is
+      specified.
+    </p>
+  </body>
+</html>

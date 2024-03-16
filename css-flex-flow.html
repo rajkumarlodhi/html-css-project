@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flex-flow property</title>
+    <style>
+      .mainrow {
+        width: 400px;
+        height: 50px;
+        border: 5px solid red;
+      }
+      .maincol {
+        width: 100px;
+        height: 200px;
+        border: 5px solid red;
+      }
+      #row {
+        flex-flow: row wrap;
+      }
+      #rowrev {
+        flex-flow: row-reverse nowrap;
+      }
+      #col {
+        flex-flow: column nowrap;
+      }
+      #colrev {
+        flex-flow: column-reverse nowrap;
+      }
+      div {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <h2>flex-flow: row nowrap;</h2>
+      <div id="row" class="mainrow">
+        <div style="background-color: lightblue">1</div>
+        <div style="background-color: pink">2</div>
+        <div style="background-color: lightgreen">3</div>
+        <div style="background-color: yellow">4</div>
+        <div style="background-color: blue">4</div>
+      </div>
+      <h2>flex-flow: row-reverse nowrap;</h2>
+      <div id="rowrev" class="mainrow">
+        <div style="background-color: lightblue">1</div>
+        <div style="background-color: pink">2</div>
+        <div style="background-color: lightgreen">3</div>
+        <div style="background-color: yellow">4</div>
+      </div>
+      <h2>flex-flow: column nowrap;</h2>
+      <div id="col" class="maincol">
+        <div style="background-color: lightblue">1</div>
+        <div style="background-color: pink">2</div>
+        <div style="background-color: lightgreen">3</div>
+        <div style="background-color: yellow">4</div>
+        <div style="background-color: blue">5</div>
+      </div>
+      <h2>flex-flow: column-reverse nowrap;</h2>
+      <div id="colrev" class="maincol">
+        <div style="background-color: lightblue">1</div>
+        <div style="background-color: pink">2</div>
+        <div style="background-color: lightgreen">3</div>
+        <div style="background-color: yellow">4</div>
+        <div style="background-color: blue">5</div>
+      </div>
+    </center>
+  </body>
+</html>

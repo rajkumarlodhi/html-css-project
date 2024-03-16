@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 300px;
+        height: 100px;
+        background-color: lightpink;
+        border: 1px solid black;
+      }
+      div#myDiv {
+        -webkit-transform: rotateX(150deg); /* Safari */
+        transform: rotateX(150deg); /* Standard syntax */
+      }
+      div#myDiv1 {
+        transform: rotateY(30deg); /* Standard syntax */
+      }
+      div#myDiv2 {
+        transform: rotateZ(120deg); /* Standard syntax */
+      }
+      div#myDiv3 {
+        transform: rotate3D(10deg, 20deg, 30deg); /* Standard syntax */
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is JavaTpoint!</div>
+    <div id="myDiv">This is JavaTpoint!</div>
+    <div id="myDiv1">This is JavaTpoint!</div>
+    <div id="myDi2">This is JavaTpoint!</div>
+    <div id="myDi3">This is JavaTpoint!</div>
+    <p>
+      <b>Note:</b> Internet Explorer 9 (and earlier versions) does not support
+      the rotateX() method.
+    </p>
+  </body>
+</html>

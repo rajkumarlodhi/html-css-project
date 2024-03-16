@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        counter-reset: sectn;
+      }
+      h2::before {
+        counter-increment: sectn;
+        content: "CSS Section " counter(sectn) ": ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example of CSS Counters:</h1>
+    <h2>Java Tutorial</h2>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>Oracle Tutorial</h2>
+    <p>
+      <strong>Note:</strong> IE8 supports these properties only if a !DOCTYPE is
+      specified.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+Online Code Editor
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: -webkit-flex;
+        display: flex;
+        background-color: green;
+      }
+      .flex-item {
+        background-color: lightgreen;
+        text-align: center;
+        font-size: 25px;
+        width: 100px;
+        height: 100px;
+        padding-top: 20px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex-grow: 0;</h1>
+
+    <div class="container">
+      <div class="flex-item" style="flex-grow: 0">flex-item 1</div>
+      <div class="flex-item" style="flex-grow: 0">flex-item 2</div>
+      <div class="flex-item" style="flex-grow: 0">flex-item 3</div>
+    </div>
+    <h1>flex-grow: 1;</h1>
+    <div class="container">
+      <div class="flex-item" style="flex-grow: 1">flex-item 1</div>
+      <div class="flex-item" style="flex-grow: 1">flex-item 2</div>
+      <div class="flex-item" style="flex-grow: 1">flex-item 3</div>
+    </div>
+
+    <h1>flex-grow: 0 and 1;</h1>
+    <div class="container">
+      <div class="flex-item" style="flex-grow: 0">flex-item 1</div>
+      <div class="flex-item" style="flex-grow: 0">flex-item 2</div>
+      <div class="flex-item" style="flex-grow: 1">flex-item 3</div>
+    </div>
+  </body>
+</html>

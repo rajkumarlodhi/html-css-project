@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #div1 img {
+        width: 300px;
+        height: 300px;
+      }
+      #example {
+        width: 400px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-image: url("IMG_8888.jpg"), url("img0542.jpg");
+        background-blend-mode: screen;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div id="div1">
+        <h2>Original Images</h2>
+        <img src="IMG_8888.JPG" />
+        <img src="img0542.JPG" />
+      </div>
+      <h2>background-blend-mode: screen;</h2>
+      <div id="example"></div>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS border-image Property</title>
+
+    <style>
+      p {
+        border: 20px solid transparent;
+        padding: 15px;
+        text-align: center;
+        font-size: 25px;
+        color: darkviolet;
+      }
+      #border {
+        border-image: url("IMG_8888.JPG") 80 / 30px 80px round;
+      }
+      #border1 {
+        border-image: url("brilliant-diamond-6.png") 43 / 10px 15px round
+          stretch;
+      }
+
+      #border2 {
+        border-image: url("diamond.png") 40 round stretch;
+      }
+      #border21 {
+        border-image: linear-gradient(orange, yellow, green) 40 / 30px 10px
+          stretch;
+      }
+      #border22 {
+        border-image: repeating-linear-gradient(
+            50deg,
+            blue,
+            yellow,
+            lightgreen 20px
+          )
+          30 / 20px 30px round;
+      }
+
+      #border31 {
+        border-image: radial-gradient(circle, yellow, magenta, blue) 30 / 15px
+          repeat;
+      }
+      #border32 {
+        border-image: radial-gradient(farthest-side, red, yellow, green) 30 /
+          15px round;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>border-image property</h2>
+
+    <p id="border">Welcome to the rktech.com</p>
+    <p id="border1">Welcome to the rktech.com</p>
+
+    <h2>border-image property using linear-gradient</h2>
+
+    <p id="border2">Welcome to the rktech.com</p>
+    <p id="border21">Welcome to the rktech.com</p>
+    <p id="border22">Welcome to the rktech.com</p>
+
+    <h2>border-image property Using radial-gradient</h2>
+
+    <p id="border31">Welcome to the rktech.com</p>
+    <p id="border32">Welcome to the rktech.com</p>
+  </body>
+</html>

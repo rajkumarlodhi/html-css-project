@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+      }
+      #img1 {
+        width: 300px;
+        height: 300px;
+        border: 7px solid red;
+      }
+      #obj {
+        width: 500px;
+        height: 500px;
+        object-fit: fill;
+        border: 7px solid red;
+      }
+      #obj2 {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border: 7px solid red;
+      }
+      #obj3 {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+        border: 7px solid red;
+      }
+      /* #left {
+        float: left;
+        text-align: center;
+        padding-left: 200px;
+      } */
+      #center {
+        float: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example of Object-fit property</h1>
+    <div id="left">
+      <h2>Original image</h2>
+      <img id="img1" src="IMG_8888.JPG" />
+    </div>
+    <div id="center">
+      <h2>object-fit: fill;</h2>
+      <img id="obj" src="IMG_8888.JPG" width="300" height="300" />
+    </div>
+    <div id="center">
+      <h2>object-fit: cover;</h2>
+      <img id="obj2" src="IMG_8888.JPG" width="300" height="300" />
+    </div>
+
+    <div id="center">
+      <h2>object-fit: contain;</h2>
+      <img id="obj3" src="IMG_8888.JPG" width="300" height="300" />
+    </div>
+  </body>
+</html>

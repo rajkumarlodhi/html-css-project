@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS Project</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif, sans-serif;
+      }
+      ul {
+        list-style-type: none;
+        /* position: fixed; */
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightgray;
+      }
+      li {
+        float: left;
+        border-right: 1px solid blue;
+      }
+      li a,
+      .dropbtn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: blue;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+      }
+      .active {
+        background-color: gray;
+        color: white;
+      }
+      li a:hover,
+      .dropdown:hover,
+      .dropbtn:hover {
+        background-color: orange;
+      }
+      footer {
+        position: fixed;
+        bottom: 0px;
+      }
+      section {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .main {
+        position: relative;
+      }
+      h1 {
+        padding-top: 100px;
+      }
+      .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 160px;
+        box-shadow: 5px 8px 10px 0px;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: gray;
+        color: white;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#" class="active" role="link">Home</a></li>
+        <li><a href="#" role="link">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Blogs</a>
+          <div class="dropdown-content">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Bootstrap</a>
+          </div>
+        </li>
+        <li><a href="#" role="link">Testimonials</a></li>
+        <li><a href="#" role="link">Join Us</a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="main">
+        <h1>Welcome to Ayodhya</h1>
+        <p>
+          राम मंदिर एक महत्वपूर्ण हिंदू मंदिर है जो वर्तमान में भारत के उत्तर
+          प्रदेश के अयोध्या में निर्माणाधीन है। जनवरी २०२४ में इसका गर्भगृह तथा
+          प्रथम तल बनकर तैयार है और २२ जनवरी २०२४ को इसमें श्रीराम की मूर्ति की
+          प्राणप्रतिष्ठा की जायेगी। यह मंदिर उस स्थान पर स्थित है जिसे हिंदू
+          धर्म के प्रमुख देवता राम का जन्मस्थान माना जाता है।[4][5] पहले, इस
+          स्थान पर बाबरी मस्जिद थी, जिसका निर्माण एक मौजूदा गैर-इस्लामी ढांचे को
+          ध्वस्त करने के बाद किया गया था, जिसे बाद में ध्वस्त कर दिया गया था।[6]
+          2019 में, भारत के सर्वोच्च न्यायालय ने विवादित भूमि पर फैसला सुनाया,
+          जिसमें कहा गया कि यह भूमि हिंदुओं की है, जो इस पर राम मंदिर का निर्माण
+          कर सकते हैं। मुसलमानों को मस्जिद बनाने के लिए ज़मीन का एक अलग टुकड़ा
+          दिया जाएगा।[7] अदालत ने साक्ष्य के रूप में भारतीय पुरातत्व सर्वेक्षण
+          (एएसआई) की एक रिपोर्ट का हवाला दिया, जिसमें ध्वस्त की गई बाबरी मस्जिद
+          के नीचे एक गैर-इस्लामिक संरचना की मौजूदगी का सुझाव देने वाले सबूत दिए
+          गए थे।[8] राम मंदिर के निर्माण की शुरुआत के लिए भूमिपूजन 5 अगस्त 2020
+          को किया गया था। [9] वर्तमान में निर्माणाधीन मंदिर की देखरेख श्री राम
+          जन्मभूमि तीर्थ क्षेत्र ट्रस्ट द्वारा की जा रही है। मंदिर का उद्घाटन 22
+          जनवरी 2024 को निर्धारित है। [10] दान के कथित दुरुपयोग, अपने प्रमुख
+          कार्यकर्ताओं को दरकिनार करने और भाजपा द्वारा मंदिर का राजनीतिकरण करने
+          के कारण मंदिर कई विवादों में घिरा हुआ है।
+        </p>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#" class="active" role="link">Home</a></li>
+        <li><a href="#" role="link">About</a></li>
+        <li><a href="#" role="link">Blog</a></li>
+        <li><a href="#" role="link">Testimonials</a></li>
+        <li><a href="#" role="link">Join Us</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

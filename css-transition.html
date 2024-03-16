@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+        transition: width 1s, transform 2s, height 2s;
+      }
+      div:hover {
+        width: 300px;
+        height: 200px;
+        transform: rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <p>
+      Move the cursor over the div element above, to see the transition effect.
+    </p>
+  </body>
+</html>

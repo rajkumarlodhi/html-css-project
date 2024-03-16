@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        height: 100px;
+        border: 2px solid red;
+        display: flex;
+        background-color: blue;
+      }
+      .container div {
+        padding-top: 25px;
+        flex-basis: 100px;
+      }
+      .flex-item {
+        text-align: center;
+        font-size: 25px;
+      }
+      .container div:nth-of-type(1) {
+        flex-basis: 50%;
+      }
+      .container div:nth-of-type(3) {
+        flex-basis: 200px;
+      }
+      .container div:nth-of-type(5) {
+        flex-basis: 7em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>The flex-basis Property</h1>
+
+    <div class="container">
+      <div class="flex-item" style="background-color: lightblue">50%</div>
+
+      <div class="flex-item" style="background-color: yellow">100px</div>
+
+      <div class="flex-item" style="background-color: pink">200px</div>
+
+      <div class="flex-item" style="background-color: orange">100px</div>
+
+      <div class="flex-item" style="background-color: lightgreen">7em</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS transition-delay Property</title>
+    <style>
+      .div1 {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-delay: 0.5s;
+
+        /* For Safari browser */
+        -webkit-transition-property: background-color;
+        -webkit-transition-duration: 1s;
+        -webkit-transition-delay: 0.5s;
+      }
+      .div1:hover {
+        background-color: brown;
+      }
+
+      .div2 {
+        padding: 15px;
+        width: 200px;
+        height: 200px;
+        background: lightgreen;
+        transition: background-color 1s, width 2s, height 5s, transform 2s;
+        transition-delay: 1.5ms;
+      }
+
+      .div2:hover {
+        width: 300px;
+        height: 300px;
+        -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+        transform: rotate(360deg);
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <p>
+      Move the cursor over the div element above, to see the transition effect.
+    </p>
+
+    <h2>
+      Multiple transition effect. Here, the transition effects on width, height,
+      and transformation.
+    </h2>
+    <span> (Move your cursor on me to see the effect)</span>
+
+    <div class="div2">
+      <h2>JavaTpoint.com</h2>
+      <p>(Move your cursor on me to see the effect)</p>
+    </div>
+  </body>
+</html>
